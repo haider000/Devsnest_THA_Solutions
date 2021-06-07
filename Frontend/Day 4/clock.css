@@ -1,0 +1,94 @@
+body {
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-wrapper {
+  background-color: rgb(57, 19, 83);
+  border: 30px solid rgb(28, 1, 48);
+  border-radius: 100%;
+  position: absolute;
+  box-shadow: 0px 2px 8px 1px rgb(28, 1, 55); inset;
+}
+
+.clock {
+  background-color: rgb(32, 2, 54);
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  position: relative;
+}
+.hour {
+  position: relative;
+  z-index: 2;
+  height: 138px;
+  width: 5px;
+  background-color: aliceblue;
+  top: 0;
+  bottom: 15%;
+  left: 49%;
+  right: 0;
+  transform-origin: bottom center;
+  transform: rotate(70deg);
+}
+
+.minute {
+  position: relative;
+  z-index: 2;
+  height: 122px;
+  width: 8px;
+  background-color: aliceblue;
+  top: 0;
+  bottom: 0;
+  left: 49%;
+  right: 0;
+  transform-origin: bottom center;
+
+}
+
+
+.second {
+  position: relative;
+  z-index: 2;
+  height: 145px;
+  width: 2px;
+  background-color: red;
+  top: -89%;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  transform: rotate(52deg);
+  transform-origin: bottom center;
+	-webkit-animation: rotation 60s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+		from {
+				-webkit-transform: rotate(0deg);
+		}
+		to {
+				-webkit-transform: rotate(359deg);
+		}
+}
+
+.round-dot {
+  position: relative;
+  z-index: 2;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(32, 2, 54);
+  border: 8px solid black;
+  border-radius: 50%;
+  top: -95%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
