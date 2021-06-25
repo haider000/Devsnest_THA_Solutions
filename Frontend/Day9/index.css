@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  height: fit-content;
+  width: 600px;
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.box {
+  height: 40px;
+  width: 60px;
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  border: 1px solid white;
+}
